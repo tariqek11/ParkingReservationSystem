@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" /> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jarvis Mirror on the Wall</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <script type="text/javascript" src="/eel.js"></script>
+    </head>
+    <body>
+        <section id="header" style="text-align: center;">
+            <h1>FANTS Smart Parker App</h1>
+            <div style="display: flex; text-align: left;">
+                <input type="text" id="destination_address" name="destination" placeholder="Destination Address">
+                <button onclick="searchParkingLots()" id="search_btn"></button>
+            </div>
+        </section>
+        <section id="parking_list">
+            <h2>Parking lots near your destination</h2>
+            <div id="parking_lot">
+                <img id="lot_img" src="Parking Lot 1.png" alt="Parking Lot photo">
+                <div style="margin-left: 5px;">
+                    <h5>Parking Lot 1</h5>
+                    <p>Address: 123 Victoria Street</p>
+                </div>
+                <div style="margin-left: 5px;">
+                    <h3 id="rate">Rate: $[lot_rate]</h3>
+                    <input type="text" id="num_hours" name="hours" placeholder="Enter number of hours">
+                </div>
+                <button onclick="reserve()" id="spots_btn">Reserve</button>
+            </div>
+        </section>
+        <script src="scripts.js"></script>
+    </body>
+</html>
